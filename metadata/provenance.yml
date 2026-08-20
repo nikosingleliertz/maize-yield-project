@@ -1,0 +1,13 @@
+artifact: "data-raw/"
+provider: "Food and Agriculture Organization of the United Nations"
+database: "FAOSTAT"
+dataset: "Crops and Livestock Products"
+accessed: "2026-08-20"
+retrieval:
+  script: "scripts/01-acquire-faostat-data.R"
+  method: "Bulk ZIP download"
+selection:
+  item: "Maize (corn)"
+checksum:
+  algorithm: "SHA-256"
+  manifest: "metadata/checksums.sha256"
